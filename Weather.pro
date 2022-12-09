@@ -9,14 +9,19 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    main.cpp \
-    mainwindow.cpp
+    UIBase/UIBaseWindow.cpp \
+    WeatherApi/WeatherAirNow.cpp \
+    WeatherUI/weathercenterwidget.cpp \
+    WeatherUI/weathercitychangewindow.cpp \
+    main.cpp
 
 HEADERS += \
-    mainwindow.h
+    UIBase/UIBaseWindow.h \
+    WeatherApi/WeatherAirNow.h \
+    WeatherUI/weathercenterwidget.h \
+    WeatherUI/weathercitychangewindow.h
 
-FORMS += \
-    mainwindow.ui
+FORMS +=
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
